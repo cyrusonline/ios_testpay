@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testpay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzD-r1-JJM">
+                                <rect key="frame" x="172" y="67" width="30" height="30"/>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="buy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9PY-UP-vzR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6d-xs-Rj4">
+                                <rect key="frame" x="136" y="129" width="102" height="30"/>
+                                <state key="normal" title="Restore button"/>
+                                <connections>
+                                    <action selector="restore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVg-h4-F0x"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hongkongoffice" highlightedImage="hongkongoffice" translatesAutoresizingMaskIntoConstraints="NO" id="1Zi-yI-din">
+                                <rect key="frame" x="37" y="216" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="46f-aS-j1r"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="BQk-Tc-fER"/>
+                                    <constraint firstAttribute="width" constant="300" id="ELi-6s-wL9"/>
+                                    <constraint firstAttribute="height" constant="300" id="NBh-7a-PHW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tj2-8t-D4W">
+                                <rect key="frame" x="166" y="534" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F91-bg-oxW">
+                                <rect key="frame" x="166" y="581" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tzD-r1-JJM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="6Gg-B6-A2c"/>
+                            <constraint firstItem="1Zi-yI-din" firstAttribute="centerX" secondItem="h6d-xs-Rj4" secondAttribute="centerX" id="A6k-9O-C8P"/>
+                            <constraint firstItem="1Zi-yI-din" firstAttribute="top" secondItem="h6d-xs-Rj4" secondAttribute="bottom" constant="57" id="Cey-vM-sIJ"/>
+                            <constraint firstItem="h6d-xs-Rj4" firstAttribute="centerX" secondItem="tzD-r1-JJM" secondAttribute="centerX" id="Jh9-JH-gIz"/>
+                            <constraint firstItem="Tj2-8t-D4W" firstAttribute="top" secondItem="1Zi-yI-din" secondAttribute="bottom" constant="18" id="Mt5-Z3-ycR"/>
+                            <constraint firstItem="Tj2-8t-D4W" firstAttribute="centerX" secondItem="1Zi-yI-din" secondAttribute="centerX" id="TOf-9o-9yO"/>
+                            <constraint firstItem="F91-bg-oxW" firstAttribute="top" secondItem="Tj2-8t-D4W" secondAttribute="bottom" constant="26" id="btP-0L-bzr"/>
+                            <constraint firstItem="h6d-xs-Rj4" firstAttribute="top" secondItem="tzD-r1-JJM" secondAttribute="bottom" constant="32" id="g8w-BC-heQ"/>
+                            <constraint firstItem="F91-bg-oxW" firstAttribute="centerX" secondItem="Tj2-8t-D4W" secondAttribute="centerX" id="teB-WK-rvc"/>
+                            <constraint firstItem="tzD-r1-JJM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wBu-Rn-Z1H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buyButton" destination="tzD-r1-JJM" id="Ygr-E5-MmU"/>
+                        <outlet property="picture" destination="1Zi-yI-din" id="ucI-SC-YMp"/>
+                        <outlet property="productTitle" destination="Tj2-8t-D4W" id="jwN-uO-o0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hongkongoffice" width="1920" height="860"/>
+    </resources>
+</document>
